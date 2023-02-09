@@ -1,15 +1,16 @@
 body {
-    background-color: white;
+    background-color: whitesmoke;
 }
 
 header {
     padding: 5px;
-    background-color: grey;
+    background-color:  darkblue;
 }
 
 header h1 {
     display: inline-block;
     font-size: 30px;
+    color: white;
 }
 
 nav {
@@ -23,6 +24,11 @@ header nav ul {
 header nav ul li {
     display: inline-block;
     margin-left: 10px;
+    color: white;
+}
+
+header nav ul li a:hover {
+    color: lightskyblue;
 }
 
 .placeholder {
@@ -32,3 +38,143 @@ header nav ul li {
     background-size: cover;
     background-position: center;
 }
+
+/* About me Section portion */
+
+.aboutSection {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.aboutSection h1 {
+    width: 15%;
+    border-right: 3px black solid;
+    padding-right: 10px;
+    text-align: right;
+    font-weight: bolder;
+    
+}
+
+.aboutSection p {
+    width: 80%;
+ 
+}
+
+
+/* Experience section */
+
+.expSection {
+    display: flex;
+    flex-wrap: column;
+    width: 100%;
+    justify-content: space-between;
+    height: 400px;
+    
+}
+
+.expSection h1 {
+    width: 15%;
+    border-right: 3px black solid;
+    padding-right: 10px;
+    text-align: right;
+    flex: 0 5 auto;
+    /* play with this one */
+}
+
+
+.box1 {
+    margin: 20px;
+    padding: 10px;
+    border: 1px;
+    background-image: url("../Images/Projects-Pic.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40%;
+    /* flex: 0 3 auto; */
+    flex-shrink: 2;
+
+}
+
+.box2 {
+    /* margin: 10px; */
+    margin: 20px;
+    padding: 10px;
+    border: 1px;
+    background-image: url(../Images/Boulder-Edu.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40%;
+    flex: 0 3 auto;
+    
+}
+
+
+.ex1 {
+    margin: 10px;
+    padding: 10px;
+    border-style: solid;
+    display: inline;
+    position: relative;
+    top: 300px;
+    background-color: white;
+    /* add flex here */
+}
+
+.ex1:hover {
+    color: blue;
+}
+
+
+.benefits { 
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: left;
+    width: 10%;
+    height: 100%;
+ }
+
+/* Footer CSS */
+
+footer {
+    padding: 5px;
+    background-color: darkblue;
+    width: 100%;
+}
+
+footer h2 {
+    color: white;
+    font-size: 20px;
+}
+
+footer ul {
+    padding-top: 15px;
+    list-style-type: none;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-left: 10px;
+    color: white;
+    float: right;
+}
+
+footer ul li a:hover {
+    color: lightskyblue;
+}
+
+.link {
+    color: white;
+}
+
+/* Media screen re-sizing */
+
+@media screen and (max-width: 768px) {
+    main, header, .expSection, .aboutSection, footer {
+      flex-direction: wrap;
+      width: 100%;
+    }
+  }
+
+ 
